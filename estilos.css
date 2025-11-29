@@ -389,3 +389,90 @@ body{
   height: 100%;
   object-fit: cover;
 }
+
+/* Ajuste general para móviles */
+@media (max-width: 768px) {
+
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Permite hacer scroll en tablas muy anchas */
+  .table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Ajuste de celdas */
+  .table td,
+  .table th {
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+
+  /* Tamaño correcto de las fotos dentro de tabla */
+  .foto-container {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Imagen grande del final para que no se desborde */
+  .image-placeholder {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  /* Encabezado más compacto */
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .brand div div {
+    font-size: 14px;
+  }
+
+  /* Menú superior cabrá bien en líneas pequeñas */
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Ajuste en pantallas muy pequeñas (≤480px) */
+@media (max-width: 480px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .brand {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .table td, 
+  .table th {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .foto-container {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
