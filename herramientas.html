@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Herramientas de Mantenimiento - U.E.E Jorge Semidey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="estilos.css" />
+
+  <style>
+    /* ============= Estilos locales para esta página ============= */
+
+    .search-box {
+      margin: 25px auto;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 10px 18px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: .3s;
+    }
+
+    .search-box:focus-within {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .search-box input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1.2rem;
+      color: var(--blue-900);
+    }
+
+    .search-icon {
+      font-size: 1.4rem;
+      margin-right: 10px;
+      color: var(--blue-700);
+    }
+
+    /* ---- Lista de herramientas ---- */
+
+    .tool-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--blue-200);
+      padding: 20px 0;
+      gap: 20px;
+    }
+
+    .tool-text {
+      width: 70%;
+    }
+
+    .tool-img {
+      width: 28%;
+      height: 150px;
+      background: rgba(230,240,255,0.5);
+      border: 2px dashed #8bb6ff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .section-title {
+      color: var(--blue-900);
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    .sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="immgs/LogoUni.png" style="width: 50px; border-radius: 5px;" alt="Logo">
+      <div>
+        <h1>Herramientas</h1>
+        <div>Para Mantenimiento</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="comunidad.html">Comunidad</a>
+      <a href="introduccion.html">Introducción</a>
+      <a href="componentes.html">Componentes</a>
+      <a href="herramientas.html">Herramientas</a>
+      <a href="glosario.html">Glosario</a>
+      <a href="creditos.html">Créditos</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="dark-btn" onclick="modoOscuro()">Modo oscuro</button>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="card">
+  <h2 class="section-title">Buscador de Herramientas</h2>
+  <p class="sub">Escribe el nombre de la herramienta. El buscador solo filtra por títulos.</p>
+
+  <div class="search-box">
+    <span class="search-icon"></span>
+    <input type="text" id="buscador" placeholder="Buscar herramienta...">
+  </div>
+</section>
+
+
+<section class="contenido-herramientas">
+    <h2>Herramientas del Kit y Sus Usos</h2>
+     <img src="immgs/herramientas.jpg" class="flotante" style="width: 500px; height: 400px; ; border-radius:5;"></div>
+
+    <p>
+        Este conjunto de herramientas está diseñado para tareas de electrónica, reparación de equipos,
+        mantenimiento de computadoras y trabajo técnico en general. Permiten cortar, sujetar, medir,
+        diagnosticar, soldar, abrir dispositivos delicados y manipular componentes con precisión.
+        A la derecha de este texto puedes colocar imágenes de las herramientas para una referencia visual.
+    </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div id="lista-herramientas">
+
+        <h3>1. Herramientas para cortar y sujetar</h3>
+        <img class="tool-img" src="immgs/Alicate.webp"> </img>
+        <div class="item-herramienta" data-name="pinzas de corte alicates corte">
+            <strong>Pinzas de corte (alicates de corte):</strong> Herramienta diseñada para seccionar cables finos, patas de componentes electrónicos y pequeños terminales metálicos, proporcionando un corte limpio y preciso sin deformar el material circundante.
+        </div>
+
+        <div class="item-herramienta" data-name="mini alicate punta">
+            <strong>Mini alicate de punta:</strong> Alicate de precisión con puntas delgadas, ideal para sujetar, doblar, manipular y colocar piezas pequeñas en espacios reducidos como placas electrónicas o equipos compactos.
+        </div>
+
+        <h3>2. Herramientas para atornillar</h3>
+        <img class="tool-img" src="immgs/Destornillador.jpg"> </img>
+        <div class="item-herramienta" data-name="destornillador trinquete">
+            <strong>Destornillador de trinquete:</strong> Destornillador con mecanismo de ratchet que permite girar sin reposicionar la mano, usando puntas intercambiables para distintos tipos de tornillos. Aumenta la velocidad y comodidad en tareas repetitivas.
+        </div>
+
+        <div class="item-herramienta" data-name="puntas intercambiables">
+            <strong>Puntas intercambiables:</strong> Juego de puntas modulares con diferentes perfiles: plano, Phillips, Torx, hexagonal y especiales, usadas con el destornillador de trinquete para adaptarse a cualquier tornillo.
+        </div>
+
+        <div class="item-herramienta" data-name="destornilladores precision rojos">
+            <strong>Destornilladores de precisión:</strong> Destornilladores finos para tornillería pequeña en electrónica delicada: teléfonos, laptops, consolas, relojes y placas de circuito.
+        </div>
+
+        <div class="item-herramienta" data-name="destornilladores grandes azul rojo">
+            <strong>Destornilladores grandes:</strong> Herramientas más robustas para tornillos de mayor tamaño o alta resistencia, útiles en equipos eléctricos, mecánicos o estructuras.
+        </div>
+
+        <h3> 3. Corte, apertura y manipulación fina</h3>
+        <img class="tool-img" src="immgs/spudger.jpg"> </img>
+        <div class="item-herramienta" data-name="cutter bisturi precision">
+            <strong>Cutter de precisión:</strong> Cuchilla muy afilada para cortes limpios y detallados en cables, cintas, fundas plásticas y otros materiales delicados donde se requiere precisión.
+        </div>
+
+        <div class="item-herramienta" data-name="spudger herramientas apertura">
+            <strong>Herramientas tipo spudger:</strong> Palancas y punzones diseñados para abrir carcasas, separar conectores y manipular piezas internas sin generar daños o marcas.
+        </div>
+
+        <div class="item-herramienta" data-name="extractor componentes dip">
+            <strong>Extractor DIP:</strong> Pinza especializada para extraer circuitos integrados DIP de sus zócalos sin doblar ni romper los pines.
+        </div>
+
+        <h3> 4. Herramientas de soldadura</h3>
+        <img class="tool-img" src="immgs/Soldadura.jpg"> </img>
+        <div class="item-herramienta" data-name="soldador electrico">
+            <strong>Soldador eléctrico:</strong> Dispositivo que calienta una punta metálica para fundir estaño y soldar componentes electrónicos en placas de circuito.
+        </div>
+
+        <div class="item-herramienta" data-name="estano rollo">
+            <strong>Rollo de estaño:</strong> Hilo de aleación metálica que, al fundirse, permite unir eléctricamente y físicamente componentes y pistas.
+        </div>
+
+        <div class="item-herramienta" data-name="estano tubo extra">
+            <strong>Tubo extra de estaño:</strong>Suministro adicional para garantizar continuidad en trabajos extensos de soldadura.
+        </div>
+
+        <div class="item-herramienta" data-name="bomba desoldadora">
+            <strong>Bomba desoldadora:</strong> Herramienta de vacío para retirar estaño derretido, facilitando la eliminación de soldaduras y el reemplazo de componentes.
+        </div>
+
+        <div class="item-herramienta" data-name="flux jeringa">
+            <strong>Jeringa de flux:</strong> Líquido que mejora la adherencia del estaño, reduce la oxidación y facilita soldaduras limpias y uniformes.
+        </div>
+
+        <h3>5. Herramientas para cables y conectores</h3>
+        <img class="tool-img" src="immgs/pelacable.webp"> </img>
+        <div class="item-herramienta" data-name="crimpeadora pelacables">
+            <strong>Crimpeadora / Pelacables:</strong> Herramienta multifunción que permite pelar aislantes, cortar cables y crimpar terminales para conexiones seguras y profesionales.
+        </div>
+
+        <div class="item-herramienta" data-name="ponchadora rj45 rj11">
+            <strong>Ponchadora RJ45/RJ11:</strong> Pinza diseñada para instalar conectores de red en cables Ethernet (RJ45) o telefónicos (RJ11), asegurando un contacto firme y correcto.
+        </div>
+
+        <div class="item-herramienta" data-name="cripiadora">
+            <strong>Cripiadora:</strong> Variante o versión combinada de la crimpeadora, utilizada para unir terminales y conectores a cables mediante presión mecánica.
+        </div>
+
+        <h3> 6. Herramientas generales</h3>
+        <img class="tool-img" src="immgs/llave.jpg"> </img>
+        <div class="item-herramienta" data-name="llave inglesa ajustable">
+            <strong>Llave inglesa:</strong> Llave con boca regulable que se adapta a tuercas y pernos de diferentes tamaños, útil para montajes mecánicos, sujetadores y soportes metálicos.
+        </div>
+
+        <h3> 7. Prueba y diagnóstico</h3>
+        <img class="tool-img" src="immgs/multimetro.webp"> </img>
+        <div class="item-herramienta" data-name="multimetro tester">
+            <strong>Multímetro:</strong> Llave con boca regulable que se adapta a tuercas y pernos de diferentes tamaños, útil para montajes mecánicos, sujetadores y soportes metálicos.
+        </div>
+
+        <div class="item-herramienta" data-name="probador red lan cable">
+            <strong>Probador de red:</strong> Dispositivo que analiza continuidad, orden de cables y posibles fallos en cables de red. Confirma que un RJ45 está correctamente cableado.
+        </div>
+
+        <div class="item-herramienta" data-name="probador fuente poder psu tester">
+            <strong>Probador de fuente de poder:</strong> Equipo para verificar voltajes correctos en fuentes ATX (3.3V, 5V, 12V). Detecta fallas en líneas de alimentación antes de conectar una PC.
+        </div>
+
+        <h3> 8. Equipos auxiliares</h3>
+        <img class="tool-img" src="immgs/PULSERA.jpg"> </img>
+        <div class="item-herramienta" data-name="sopladora blower">
+            <strong>Sopladora:</strong> Herramienta de aire a presión usada para remover polvo y suciedad en computadoras, tarjetas madre, fuentes de poder y zonas difíciles de limpiar.
+        </div>
+
+        <div class="item-herramienta" data-name="pulsera antiestatica">
+            <strong>Pulsera antiestática:</strong> Accesorio que evita descargas electrostáticas (ESD) durante el trabajo con componentes sensibles, protegiendo circuitos y memorias.
+        </div>
+
+    </div>
+</section>
+
+
+  </ul>
+</section>
+
+<footer class="footer small-muted">
+  Manual Técnico — UPT ARAGUA Federico Brito Figueroa © 2025 · <span>PNF Informática</span>
+</footer>
+
+</main>
+
+<script>
+function buscarHerramienta() {
+  const texto = document.getElementById("buscador").value.toLowerCase();
+  const items = document.querySelectorAll(".item");
+
+  items.forEach(item => {
+    const titulo = item.querySelector("h3").innerText.toLowerCase();
+    item.style.display = titulo.includes(texto) ? "flex" : "none";
+  });
+}
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>

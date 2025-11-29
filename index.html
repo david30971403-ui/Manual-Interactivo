@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Manual Técnico interactivo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Tus estilos originales -->
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Estilos nuevos separados -->
+  <link rel="stylesheet" href="interactivo.css" />
+</head>
+
+<body>
+
+<!-- MENÚ LATERAL -->
+<div class="side-menu" id="sideMenu">
+  <h2>Menú</h2>
+  <a href="index.html">Inicio</a>
+  <a href="comunidad.html">Comunidad</a>
+  <a href="introduccion.html">Introducción</a>
+  <a href="componentes.html">Componentes</a>
+  <a href="herramientas.html">Herramientas</a>
+  <a href="glosario.html">Glosario</a>
+  <a href="creditos.html">Créditos</a>
+</div>
+
+<!-- VENTANA FLOTANTE DE BIENVENIDA -->
+<div class="modal-bg" id="modalBienvenida">
+  <div class="modal">
+    <h2>¡Bienvenido!</h2>
+    <p>Gracias por visitar el Manual Técnico Interactivo.<br>
+    Usa el menú lateral, modo oscuro y las interacciones añadidas.</p>
+    <button class="btn-close" onclick="cerrarModal()">Cerrar</button>
+  </div>
+</div>
+
+<!-- BOTÓN FLOTANTE SUBIR -->
+<button id="btnUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="immgs/LogoUni.png" style="width: 50px; border-radius: 5px;" alt="Logo" class="img-responsive"> 
+      <div>
+        <h1>Manual Técnico interactivo</h1>
+        <div>U.E.E Jorge Semidey — Guía institucional de mantenimiento</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="comunidad.html">Comunidad</a>
+      <a href="introduccion.html">Introducción</a>
+      <a href="componentes.html">Componentes</a>
+      <a href="herramientas.html">Herramientas</a>
+      <a href="glosario.html">Glosario</a>
+      <a href="creditos.html">Créditos</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="dark-btn" onclick="modoOscuro()">Modo oscuro</button>
+  </div>
+</header>
+
+<main class="container">
+
+<!-- === TU CONTENIDO ORIGINAL === -->
+
+<section class="card hero">
+  <div class="hero-left">
+    <h2>Guía práctica de mantenimiento</h2>
+    <p>Bienvenido a la guía completa de mantenimiento preventivo de hardaware y correctivo de software de los equipos de computación de la <strong>U.E.E "Jorge Semidey"</strong>Ubicada en Maracay Edo Aragua, hecho por estudiantes del PNF Informatica en la <strong>UPT Aragua "Federico Brito Figueroa"</strong>.</p>
+
+    <div class="cta">
+      <a class="btn btn-primary tooltip" href="introduccion.html">
+        Comenzar
+        <span>Ir a la introducción</span>
+      </a>
+      <a class="btn btn-outline tooltip" href="herramientas.html">
+        Ver Herramientas
+        <span>Listado detallado</span>
+      </a>
+    </div>
+
+    <h3 style="margin-top:18px;color:var(--blue-700)">Resumen rápido</h3>
+    <ul style="color:var(--muted)">
+      <li>Procedimientos de mantenimiento preventivo y correctivo</li>
+      <li>Fallas comunes y soluciones</li>
+      <li>Inventario y equipo responsable</li>
+      <li>Registros recomendados</li>
+    </ul>
+  </div>
+
+  <div>
+    <img src="immgs/entrada.jpg" class="image-placeholder">
+    <img src="immgs/JORGE SEMIDEY.png" class="image-placeholder" style="height:120px;width:200px;border-radius:5px;">
+    <img src="immgs/LogoUni.png" class="image-placeholder" style="height:120px;width:200px;border-radius:5px;">
+  </div>
+</section>
+
+<div class="card">
+  <h3 style="color:var(--blue-900)">Preguntas frecuentes</h3>
+
+  <details><summary>¿Cada cuánto se debe hacer mantenimiento preventivo?</summary>
+     <p class="small-muted">Depende del equipo. Recomendación general: inspección semanal, mantenimiento menor mensual, mantenimiento mayor trimestral o semestral según criticidad.</p> </details>
+  <details><summary>¿Qué hacer si el equipo empieza a fallar?</summary>
+     <p class="small-muted">Borrar archivos basura, verificar que no tenga virus el sistema y/o si el problema continua reestablecer de fabrica el equipo.</p> </details> 
+  <details> <summary>¿Cómo saber si un equipo necesita mantenimiento inmediato?</summary> 
+     <p class="small-muted">Si presenta ruidos anormales, sobrecalentamiento, lentitud extrema, apagados inesperados o mensajes de error frecuentes, es recomendable realizar una revisión técnica lo antes posible para evitar daños mayores.</p> </details> 
+  <details> <summary>¿Es necesario actualizar el software del equipo?</summary> 
+     <p class="small-muted">Sí. Mantener el software actualizado mejora el rendimiento, la seguridad y la compatibilidad del equipo. Se recomienda activar las actualizaciones automáticas cuando sea posible.</p> </details>
+  <details> <summary>¿Qué hacer si el equipo se sobrecalienta?</summary> 
+     <p class="small-muted">Verificar que las rejillas de ventilación no estén bloqueadas, limpiar ventiladores, evitar el uso sobre superficies blandas y, de ser necesario, aplicar pasta térmica nueva o revisar el sistema de refrigeración.</p> </details> 
+  <details> <summary>¿Cómo prolongar la vida útil de un equipo?</summary> 
+     <p class="small-muted">Realizar mantenimientos periódicos, evitar sobrecargas eléctricas, mantener el equipo limpio y ventilado, usar protectores de voltaje y evitar golpes o manipulación brusca.</p> </details> 
+  <details> <summary>¿Qué hacer si el equipo tiene virus o malware?</summary> 
+     <p class="small-muted">Realizar un escaneo completo con un antivirus confiable, eliminar archivos sospechosos, desinstalar aplicaciones desconocidas y, si el problema persiste, formatear el equipo con respaldo previo.</p> </details> 
+</div>
+
+<footer class="footer small-muted">
+  Manual Técnico — UPT ARAGUA Federico Brito Figueroa © 2025 · <span>PNF Informatica</span>
+</footer>
+</main>
+
+<!-- ARCHIVO JS SEPARADO -->
+<script src="interactivo.js"></script>
+
+<!-- Script original que ya usabas -->
+<script src="main.js"></script>
+
+</body>
+</html>

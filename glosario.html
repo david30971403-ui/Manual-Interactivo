@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Glosario - Manual Técnico</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="immgs/LogoUni.png" style="width: 50px; border-radius: 5px;" alt="Logo" class="img-responsive"> 
+        <div>
+          <h1>Glosario de Términos</h1>
+          <div>Definiciones clave para uso técnico</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="glosario.html" class="active">Glosario</a>
+        <a href="creditos.html">Créditos</a>
+      </nav>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="dark-btn" onclick="modoOscuro()">Modo oscuro</button>
+  </div>
+</header>
+
+  <main class="container">
+
+    <!-- 🔍 BUSCADOR -->
+    <div class="search-box">
+  <input 
+    type="text" 
+    id="buscador" 
+    placeholder=" Buscar Palabra..." 
+    onkeyup="filtrarComponentes()"
+  >
+</div>
+
+    <!-- 📘 GLOSARIO COMPLETO -->
+    <section class="card">
+      <h2>Definiciones (ordenadas A–Z)</h2>
+
+      <div id="glosario-list">
+
+        <!-- 🔤 A -->
+        <h3>A</h3>
+
+        <h4>Aislamiento</h4>
+        <p class="small-muted">Material que evita el paso de corriente eléctrica fuera de un conductor.</p>
+
+        <h4>Amperaje</h4>
+        <p class="small-muted">Magnitud que indica la intensidad de corriente en un circuito eléctrico.</p>
+
+        <h4>Arranque</h4>
+        <p class="small-muted">Proceso en el que un equipo o sistema inicia sus operaciones.</p>
+
+        <h4>Autodiagnóstico</h4>
+        <p class="small-muted">Función de algunos dispositivos que detectan fallas automáticamente.</p>
+
+
+        <!-- 🔤 B -->
+        <h3>B</h3>
+
+        <h4>Batería</h4>
+        <p class="small-muted">Dispositivo que almacena energía química para convertirla en energía eléctrica.</p>
+
+        <h4>Bitácora</h4>
+        <p class="small-muted">Registro detallado de eventos, mantenimientos o incidencias técnicas.</p>
+
+
+        <!-- 🔤 C -->
+        <h3>C</h3>
+
+        <h4>Cableado</h4>
+        <p class="small-muted">Conjunto de cables destinados a transportar energía o datos.</p>
+
+        <h4>Capacitor</h4>
+        <p class="small-muted">Componente que almacena energía en forma de campo eléctrico.</p>
+
+        <h4>Carga</h4>
+        <p class="small-muted">Dispositivo o sistema que consume energía eléctrica.</p>
+
+        <h4>Ciclo de vida</h4>
+        <p class="small-muted">Tiempo útil de funcionamiento estimado de un componente.</p>
+
+        <h4>Correctivo</h4>
+        <p class="small-muted">Acción realizada después de la aparición de una falla.</p>
+
+
+        <!-- 🔤 D -->
+        <h3>D</h3>
+
+        <h4>Diodo</h4>
+        <p class="small-muted">Componente que permite el paso de corriente en una sola dirección.</p>
+
+        <h4>Diagnóstico</h4>
+        <p class="small-muted">Proceso de análisis para identificar la causa de una falla.</p>
+
+
+        <!-- 🔤 E -->
+        <h3>E</h3>
+
+        <h4>Eficiencia energética</h4>
+        <p class="small-muted">Capacidad de un sistema para operar usando la menor cantidad posible de energía.</p>
+
+        <h4>EPP</h4>
+        <p class="small-muted">Equipos de Protección Personal necesarios para trabajos técnicos.</p>
+
+        <h4>Estabilizador</h4>
+        <p class="small-muted">Dispositivo que regula la entrada de voltaje para evitar daños.</p>
+
+
+        <!-- 🔤 F -->
+        <h3>F</h3>
+
+        <h4>Ficha técnica</h4>
+        <p class="small-muted">Documento con las especificaciones técnicas de un equipo.</p>
+
+        <h4>Fusible</h4>
+        <p class="small-muted">Elemento de seguridad que abre un circuito al sobrepasarse la corriente permitida.</p>
+
+
+        <!-- 🔤 G -->
+        <h3>G</h3>
+
+        <h4>Generador</h4>
+        <p class="small-muted">Máquina capaz de convertir energía mecánica en energía eléctrica.</p>
+
+        <h4>Gestión técnica</h4>
+        <p class="small-muted">Planificación y control de actividades relacionadas con equipos.</p>
+
+
+        <!-- 🔤 I -->
+        <h3>I</h3>
+
+        <h4>Indicador</h4>
+        <p class="small-muted">Señal visual o auditiva que muestra el estado de un sistema.</p>
+
+        <h4>Instalación</h4>
+        <p class="small-muted">Montaje físico y técnico de un sistema o componente.</p>
+
+
+        <!-- 🔤 M -->
+        <h3>M</h3>
+
+        <h4>Mantenimiento</h4>
+        <p class="small-muted">Acciones destinadas a mantener un equipo en su funcionamiento óptimo.</p>
+
+        <h4>Multímetro</h4>
+        <p class="small-muted">Instrumento para medir voltaje, corriente y resistencia.</p>
+
+
+        <!-- 🔤 P -->
+        <h3>P</h3>
+
+        <h4>Potencia</h4>
+        <p class="small-muted">Cantidad de energía consumida o entregada por un sistema en un tiempo determinado.</p>
+
+        <h4>Preventivo</h4>
+        <p class="small-muted">Acciones programadas que buscan evitar fallas futuras.</p>
+
+        <h4>Predictivo</h4>
+        <p class="small-muted">Supervisión y análisis para anticipar fallas y actuar antes de que ocurran.</p>
+
+
+        <!-- 🔤 R -->
+        <h3>R</h3>
+
+        <h4>Resistencia</h4>
+        <p class="small-muted">Componente que limita el flujo de corriente eléctrica.</p>
+
+        <h4>Redundancia</h4>
+        <p class="small-muted">Duplicación de elementos para aumentar la seguridad de un sistema.</p>
+
+
+        <!-- 🔤 S -->
+        <h3>S</h3>
+
+        <h4>Sensores</h4>
+        <p class="small-muted">Dispositivos capaces de detectar cambios en el entorno.</p>
+
+        <h4>Servicio técnico</h4>
+        <p class="small-muted">Atención especializada para reparación o mantenimiento.</p>
+
+
+        <!-- 🔤 T -->
+        <h3>T</h3>
+
+        <h4>Temperatura de operación</h4>
+        <p class="small-muted">Rango de temperatura en el que un equipo puede funcionar de forma segura.</p>
+
+        <h4>Tensión</h4>
+        <p class="small-muted">Diferencia de potencial eléctrico entre dos puntos.</p>
+
+        <h4>Transformador</h4>
+        <p class="small-muted">Dispositivo que modifica el voltaje de entrada.</p>
+
+
+        <!-- 🔤 V -->
+        <h3>V</h3>
+
+        <h4>Voltaje</h4>
+        <p class="small-muted">Fuerza que impulsa la corriente eléctrica.</p>
+
+        <h4>Voltímetro</h4>
+        <p class="small-muted">Instrumento de medición para conocer la tensión eléctrica.</p>
+
+      </div>
+    </section>
+
+    <!-- 📘 ABREVIATURAS -->
+    <section class="card">
+      <h3>Abreviaturas comunes</h3>
+      <ul style="color:var(--muted)">
+        <li>PC — Computador personal</li>
+        <li>TI — Tecnologías de la Información</li>
+        <li>EPP — Equipo de Protección Personal</li>
+        <li>UPS — Sistema de alimentación ininterrumpida</li>
+        <li>LED — Diodo Emisor de Luz</li>
+        <li>CPU — Unidad Central de Procesamiento</li>
+        <li>RAM — Memoria de Acceso Aleatorio</li>
+        <li>SSD — Unidad de Estado Sólido</li>
+      </ul>
+    </section>
+
+   
+
+<script src="main.js"></script>
+
+<!-- 🔍 Buscador (Funciona sin tocar tu main.js) -->
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const terms = document.querySelectorAll("#glosario-list h4");
+
+  searchInput.addEventListener("keyup", () => {
+    const filter = searchInput.value.toLowerCase();
+
+    terms.forEach(term => {
+      const text = term.textContent.toLowerCase();
+      const definition = term.nextElementSibling;
+
+      if (text.includes(filter)) {
+        term.style.display = "block";
+        definition.style.display = "block";
+      } else {
+        term.style.display = "none";
+        definition.style.display = "none";
+      }
+    });
+  });
+</script>
+<footer class="footer small-muted">
+      Manual Técnico — UPT ARAGUA Federico Brito Figueroa © 2025 · <span>PNF Informatica</span>
+    </footer>
+  </main>
+
+<script src="main.js"></script>
+</body>
+</html>

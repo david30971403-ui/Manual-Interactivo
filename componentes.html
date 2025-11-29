@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Componentes de la Canaima - U.E.E Jorge Semidey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="estilos.css" />
+
+  <style>
+    /* Ajuste local sin afectar tu CSS global */
+    .comp-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--blue-200);
+      padding: 18px 0;
+    }
+
+    .comp-text {
+      width: 70%;
+      padding-right: 15px;
+    }
+
+    .comp-img {
+      width: 28%;
+      min-height: 130px;
+      background: #e6f0ff;
+      border: 2px dashed #8bb6ff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .section-title {
+      color: var(--blue-900);
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+
+    .sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="immgs/LogoUni.png" style="width: 50px; border-radius: 5px;" alt="Logo" class="img-responsive"> 
+      <div>
+        <h1>Componentes Canaima</h1>
+        <div>Listado completo de Hardware y Software</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="comunidad.html">Comunidad</a>
+      <a href="introduccion.html">Introducción</a>
+      <a href="componentes.html">Componentes</a>
+      <a href="herramientas.html">Herramientas</a>
+      <a href="glosario.html">Glosario</a>
+      <a href="creditos.html">Créditos</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="dark-btn" onclick="modoOscuro()">Modo oscuro</button>
+  </div>
+</header>
+
+
+<main class="container">
+
+<!-- ============================================================= -->
+<!-- BUSCADOR DE COMPONENTES                                       -->
+<!-- ============================================================= -->
+
+<section class="card">
+  <h2>Buscador de Componentes</h2>
+
+  <div class="search-box">
+  <input 
+    type="text" 
+    id="buscador" 
+    placeholder=" Buscar componente..." 
+    onkeyup="filtrarComponentes()"
+  >
+</div>
+  <p class="small-muted">Escribe el nombre del componente que deseas consultar.</p>
+</section>
+
+
+<!-- ============================================================= -->
+<!-- HARDWARE                                                      -->
+<!-- ============================================================= -->
+
+<section class="card">
+  <h2 class="section-title">Componentes de Hardware</h2>
+  <p class="sub">Elementos físicos que conforman la estructura de la Canaima.</p>
+
+  <ul id="listaComponentes">
+
+    <!-- PROCESADOR -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Procesador — Intel Atom N270 (1.6 GHz)</h3>
+        <p >
+          Microprocesador de bajo consumo diseñado para equipos portátiles educativos. Su arquitectura 
+          permite ejecutar aplicaciones básicas, navegadores, programas escolares y sistemas Linux livianos.
+          Posee tecnología HyperThreading que mejora la multitarea ligera.
+        </p>
+      </div>
+      <img src="immgs/Procesador.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- CHIPSET -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Chipset — Intel 945GSE</h3>
+        <p >
+          Controlador principal que gestiona la comunicación entre CPU, memoria RAM, video integrado y 
+          dispositivos periféricos. Incluye gráficos integrados Intel GMA 950.
+        </p>
+      </div>
+      <img src="immgs/Chipset.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- RAM -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Memoria RAM — 1GB DDR2 667 MHz</h3>
+        <p >
+          Memoria de acceso rápido que almacena información temporal. Crucial para el rendimiento 
+          al abrir programas, navegar o ejecutar aplicaciones educativas.
+        </p>
+      </div>
+      <img src="immgs/ran.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- DISCO DURO -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Disco Duro — 40GB PATA 1.8"</h3>
+        <p >
+          Almacena el sistema operativo, documentos, configuraciones y programas escolares. 
+          Es una unidad mecánica pequeña diseñada para equipos compactos.
+        </p>
+      </div>
+      <img src="immgs/HDD.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- PANTALLA -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Pantalla TFT de 8"</h3>
+        <p >
+          Panel compacto diseñado para bajo consumo. Adecuado para lectura, tareas básicas y uso escolar continuo.
+        </p>
+      </div>
+      <img src="immgs/pantalla.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- RESOLUCIÓN -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Resolución Máxima — 1024x600</h3>
+        <p >
+          Ofrece calidad estándar para equipos portátiles educativos, suficiente para textos, aplicaciones 
+          escolares y navegación web.
+        </p>
+      </div>
+      <img src="immgs/resolu.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- CÁMARA -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Cámara Web — 0.37 MP</h3>
+        <p>
+          Diseñada para videollamadas básicas en plataformas educativas. Su resolución limitada permite uso 
+          funcional en condiciones de buena iluminación.
+        </p>
+      </div>
+      <img src="immgs/camara.jpg" class="comp-img"></img>
+    </li>
+
+
+    <!-- ALTAVOCES Y PUERTOS -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Altavoces y Entradas</h3>
+        <p>
+          Incluye altavoces internos, entrada para micrófono 3.5 mm y salida de sonido 3.5 mm. 
+          Ideal para actividades multimedia educativas.
+        </p>
+      </div>
+    <img src="immgs/puertos.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- PUERTOS -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Interfaces y Puertos</h3>
+        <ul >
+          <li>2 puertos USB (1.0 / 2.0)</li>
+          <li>1 puerto VGA para monitor externo</li>
+          <li>1 puerto Ethernet RJ-45 Realtek RTL8139</li>
+          <li>1 lector de tarjetas SD</li>
+        </ul>
+      </div>
+      <img src="immgs/auxi.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- WIFI -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Tarjeta Wi-Fi — RT73 USB Wireless LAN</h3>
+        <p >
+          Permite conexión inalámbrica estable bajo los estándares 802.11 b/g. Adecuada para navegación escolar 
+          y plataformas educativas.
+        </p>
+      </div>
+      <img src="immgs/wifi.jpg" class="comp-img"></img>
+    </li>
+
+    <!-- BATERÍA -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Batería — Ion-litio (2 celdas)</h3>
+        <p >
+          Proporciona entre 3 y 3.5 horas de autonomía. Es ligera y diseñada para seguridad en ambientes escolares.
+        </p>
+      </div>
+      <img src="immgs/bateri.webp" class="comp-img"></img>
+    </li>
+
+    <!-- PESO -->
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Peso — 1.4 kg</h3>
+        <p>
+          Su peso liviano facilita su transporte por estudiantes y docentes.
+        </p>
+      </div>
+   
+    </li>
+
+  </ul>
+</section>
+
+
+<!-- ============================================================= -->
+<!-- SOFTWARE                                                      -->
+<!-- ============================================================= -->
+
+<section class="card">
+  <h2 class="section-title">Componentes de Software</h2>
+  <p class="sub">Programas, controladores y sistemas que permiten el funcionamiento de la Canaima.</p>
+
+  <ul class="component-list">
+
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Sistema Operativo — Canaima GNU/Linux</h3>
+        <p >
+          Basado en Debian. Incluye herramientas educativas, aplicaciones de productividad 
+          y entornos livianos que optimizan el rendimiento del equipo.
+        </p>
+      </div>
+     
+    </li>
+
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Controladores del Sistema</h3>
+        <p >
+          Incluyen drivers para Wi-Fi, gráficos Intel, audio, cámara web y puertos internos. 
+          Son esenciales para reconocer el hardware y permitir su funcionamiento.
+        </p>
+      </div>
+   
+    </li>
+
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>Aplicaciones Educativas</h3>
+        <p >
+          Software preinstalado para lectura, matemática, actividades interactivas, 
+          navegación y escritura. Optimizado para uso escolar.
+        </p>
+      </div>
+     
+    </li>
+
+    <li class="comp-item item">
+      <div class="comp-text">
+        <h3>BIOS / Firmware</h3>
+        <p >
+          Permite la comunicación entre hardware y software. Controla el arranque 
+          del sistema y la configuración primaria del equipo.
+        </p>
+      </div>
+    
+    </li>
+
+  </ul>
+</section>
+
+
+<footer class="footer small-muted">
+      Manual Técnico — UPT ARAGUA Federico Brito Figueroa © 2025 · <span>PNF Informatica</span>
+    </footer>
+  </main>
+
+
+<script>
+function filtrarComponentes() {
+  const texto = document.getElementById("buscador").value.toLowerCase();
+  const items = document.querySelectorAll(".item");
+
+  items.forEach(item => {
+    const contenido = item.innerText.toLowerCase();
+    item.style.display = contenido.includes(texto) ? "flex" : "none";
+  });
+}
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
